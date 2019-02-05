@@ -15,7 +15,7 @@ html {
   --c1:#d63c37;
   --c2:#666666;
   --c3:#333333;
-  --c4:#b37db8;
+  --c4:var(--c3);
   --s0:12pt;
   --s1:14pt;
   --s2:22pt;
@@ -95,6 +95,12 @@ html {
   margin-bottom: 56px;
 }
 
+@media only screen and (max-width: 550px) {
+  .theme #two #abouts > h3 {
+    margin-left: 0px;
+  }
+}
+
 .theme #two #abouts h6 {
   margin-left: -22px;
 }
@@ -111,6 +117,9 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .theme #three #features > div {
@@ -136,6 +145,12 @@ html {
   margin: 26px -74px;
 }
 
+@media only screen and (max-width: 460px) {
+  .theme h5 {
+    margin-left: 0px;
+  }
+}
+
 .theme h3 {
   font-family: var(--f1);
   font-size: var(--s2);
@@ -147,14 +162,14 @@ html {
   font-size: var(--s1);
 }
 
+.theme h5::before {
+  padding: 16px;
+}
+
 .theme h6 {
   color: var(--c1);
   font-weight: normal;
   font-size: var(--s0);
-}
-
-.theme h5::before {
-  padding: 16px;
 }
 
 .theme #bp > h5::before {
