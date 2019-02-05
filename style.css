@@ -92,6 +92,11 @@ html {
 
 .theme #two #abouts > h3 {
   margin-left: -110px;
+  margin-bottom: 56px;
+}
+
+.theme #two #abouts h6 {
+  margin-left: -22px;
 }
 
 .theme #three {
