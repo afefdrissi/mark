@@ -1,0 +1,200 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*,
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.theme {
+  --c0:#fefefe;
+  --c1:#d63c37;
+  --c2:#666666;
+  --c3:#333333;
+  --c4:#b37db8;
+  --s0:12pt;
+  --s1:14pt;
+  --s2:22pt;
+  --s3:36pt;
+  --s4:52pt;
+  --f0: 'Roboto', sans-serif;
+  --f1:'Playfair Display', serif;
+  --f2:#16273a;
+  font-family: var(--f0);
+  font-size: var(--s0);
+  background-color: var(--c0);
+  color: var(--c2);
+  margin: 0;
+}
+
+.theme .full-page {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 40px 8vw;
+}
+
+.theme #one {
+  background-image: url("img.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.theme #two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.theme #two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("img.jpg");
+  background-size: auto 85%;
+  background-repeat: no-repeat;
+  background-position: 10vw bottom;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 920px) {
+  .theme #two::before {
+    opacity: .3;
+  }
+}
+
+.theme #two #abouts {
+  margin-left: auto;
+  width: 360px;
+}
+
+.theme #two #abouts > h3 {
+  margin-left: -110px;
+}
+
+.theme #three {
+  position: relative;
+  background: var(--c1);
+  color: var(--c3);
+}
+
+.theme #three #features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.theme #three #features > div {
+  margin: 18px;
+  width: 340px;
+}
+
+.theme h1 {
+  color: var(--c3);
+  font-family: var(--f1);
+  font-size: var(--s3);
+}
+
+.theme h1 span {
+  color: var(--c1);
+}
+
+.theme h3, .theme h6 {
+  margin: 12px 0px;
+}
+
+.theme h5 {
+  margin: 26px -74px;
+}
+
+.theme h3 {
+  font-family: var(--f1);
+  font-size: var(--s2);
+  color: var(--c3);
+}
+
+.theme h5 {
+  color: var(--c0);
+  font-size: var(--s1);
+}
+
+.theme h6 {
+  color: var(--c1);
+  font-weight: normal;
+  font-size: var(--s0);
+}
+
+.theme h5::before {
+  padding: 16px;
+}
+
+.theme #bp > h5::before {
+  content: url("bp.png");
+  margin-right: 12px;
+  padding: 18px;
+  padding-bottom: 14px;
+  padding-top: 22px;
+  background: var(--c0);
+  border: 1pt solid var(--c0);
+  border-radius: 50%;
+}
+
+.theme #star > h6::before {
+  margin: 12px;
+  content: url("star.png");
+}
+
+.theme #heart > h6::before {
+  margin: 12px;
+  content: url("heart.png");
+}
+
+.theme #moon > h6::before {
+  margin: 12px;
+  content: url("moon.png");
+}
+
+.theme #ac > h5::before {
+  margin: 12px;
+  content: url("ac.png");
+}
+
+#lf > h5::before {
+  margin: 12px;
+  content: url("lf.png");
+}
+
+#cc > h5::before {
+  margin: 12px;
+  content: url("cc.png");
+}
+
+#ua > h5::before {
+  margin: 12px;
+  content: url("ua.png");
+}
+/*# sourceMappingURL=style.css.map */

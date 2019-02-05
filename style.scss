@@ -1,0 +1,180 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+*,
+:before,
+:after {
+          box-sizing: border-box;
+}
+.theme{
+    --c0:#fefefe;$c0:var(--c0);
+    --c1:#d63c37;$c1:var(--c1);
+    --c2:#666666;$c2:var(--c2);
+    --c3:#333333;$c3:var(--c3);
+    --c4:#b37db8;$c4:var(--c4);
+    --s0:12pt;$s0:var(--s0);
+    --s1:14pt;$s1:var(--s1);
+    --s2:22pt;$s2:var(--s2);
+    --s3:36pt;$s3:var(--s3);
+    --s4:52pt;$s4:var(--s4);
+    --f0: 'Roboto', sans-serif;$f0:var(--f0);
+    --f1:'Playfair Display', serif;
+    //--f1:'Caladea',
+    $f1:var(--f1);
+    --f2:#16273a;$f2:var(--f2);
+    font-family:$f0;
+    font-size: $s0;
+    //body
+     background-color: $c0;  color: $c2;margin: 0;
+     /////////////////////
+     .full-page{
+        width: 100vw;min-height: 100vh;padding: 40px 8vw;
+
+     }
+    #one{
+        background-image: url("img.png");background-size: 100%;background-repeat: no-repeat;
+        background-position: bottom;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center
+    }
+    #two{
+        display: flex;
+        justify-content: center;
+        position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0; 
+                left: 0;
+                background-image: url('img.jpg');
+                background-size: auto 85%;
+                background-repeat: no-repeat;          
+                background-position:10vw bottom;
+                width: 100%; 
+                height: 100%;  
+                @media only screen and (max-width: 920px) {
+                
+                  opacity: .3;       
+                            }
+                
+                z-index: -1;}
+        #abouts{
+            margin-left: auto;
+            width: 360px;
+            >h3{
+                margin-left:-110px ;
+            }
+
+        }
+    }
+    #three{
+        position: relative;
+        background: $c1;
+        color: $c3;
+
+           #features {
+        display: flex;
+        flex-wrap: wrap;
+          >div{
+              margin: 18px ;width:340px;
+          }
+        }
+    }
+    h1{
+        color: $c3;
+        font-family: $f1;
+        font-size: $s3;
+        span{
+            color: $c1;
+
+        }
+    }
+    h3,h6{
+        margin:12px 0px;
+    }
+    h5{
+        margin:26px -74px;
+    }
+    h3{
+        font-family: $f1;font-size:$s2; color: $c3;
+    }
+    h5{
+        color: $c0;
+        font-size: $s1;
+    }
+    h6{
+        color: $c1;
+font-weight: normal;
+font-size: $s0;
+
+    }
+    h5::before{
+        padding: 16px;
+    }
+    #bp>h5{
+    &::before{
+    content: url("bp.png");
+       margin-right: 12px;
+       padding:18px;
+       padding-bottom: 14px;
+       padding-top: 22px;
+       background:$c0;
+        border: 1pt solid $c0;
+        border-radius: 50%;
+         
+    }
+
+}    #star>h6{
+    &::before{
+       margin: 12px;
+        content: url("star.png");
+         
+    }
+}
+#heart>h6{
+    &::before{
+       margin: 12px;
+        content: url("heart.png");
+         
+    }
+}
+#moon>h6{
+    &::before{
+       margin: 12px;
+        content: url("moon.png");
+         
+    }
+}
+#ac>h5{
+    &::before{
+       margin: 12px;
+        content: url("ac.png");
+         
+    }
+}
+
+}
+#lf>h5{
+    &::before{
+       margin: 12px;
+        content: url("lf.png");
+         
+    }
+}
+#cc>h5{
+    &::before{
+       margin: 12px;
+        content: url("cc.png");
+         
+    }
+}
+#ua>h5{
+    &::before{
+       margin: 12px;
+        content: url("ua.png");
+         
+    }
+}
